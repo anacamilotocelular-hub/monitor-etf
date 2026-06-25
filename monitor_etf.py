@@ -32,5 +32,5 @@ for nome, ticker in ativos.items():
     else:
         mensagem += f"📈 **{nome}**: {preco_atual:.2f} (Média: {media_50:.2f})\nStatus: {status}\n\n"
 
-bot.send_message (CHAT_ID, messagem, parse_mode="Markdown")
+bot.send_message(CHAT_ID, mensagem, parse_mode="Markdown")
 print("Análise enviada para o Telegram!")
